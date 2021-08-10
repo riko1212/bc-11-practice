@@ -38,6 +38,15 @@ body {
   font-size: 36px;
   line-height: 1.47;
 }
+
+.sub-title {
+color: #000000;
+font-weight: 600;
+font-size: 18px;
+line-height: 22px;
+}
+
+
 .section-text {
   font-size: 16px;
   line-height: 1.56;
@@ -105,4 +114,19 @@ body {
   font-size: 36px;
   line-height: 1.47;
   color: #000000;
+}
+
+
+/* works */
+
+.works {
+  background-color: rgb(102, 35, 102);
+}
+
+.works-title {
+  color: var(--primary-title-color);
+}
+
+.works-sub-title span{
+  color: var(--accent-color);
 }
