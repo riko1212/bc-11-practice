@@ -15,6 +15,13 @@ body {
   margin: 0;
 }
 
+.container{
+  width: 1140px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
 .list {
   list-style: none;
 }
@@ -32,6 +39,8 @@ body {
   box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
   border-radius: 30px;
   border: none;
+  width: 200px;
+  height: 45px;
 }
 .section-title {
   font-weight: 700;
@@ -68,10 +77,29 @@ line-height: 22px;
 
 .header {
   background-color: violet;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #A1A1A1;
+}
+
+.header-item:not(:last-child){
+  margin-right: 40px;
+}
+
+
+.header-list{
+  display: flex;
+  justify-content: flex-end;
+
 }
 
 .hero {
   background-color: violet;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 220px;
+  padding-bottom: 335px;
 }
 
 .hero-text {
@@ -79,6 +107,7 @@ line-height: 22px;
   font-size: 16px;
   line-height: 1.25;
   color: var(--secondary-text-color);
+  margin-bottom: 20px;
 }
 
 .hero-title {
@@ -87,6 +116,8 @@ line-height: 22px;
   line-height: 1.33;
   text-align: center;
   color: var(--secondary-text-color);
+  max-width: 830px;
+  margin-bottom: 50px;
 }
 
 .mobile-title {
