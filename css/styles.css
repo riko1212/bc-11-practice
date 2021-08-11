@@ -155,9 +155,38 @@ body {
   margin: 0 auto;
 }
 /*  Section standarts */
+
+.standarts {
+  padding: 100px 0 70px 0;
+}
+
+.standarts-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 90px;
+  border-bottom: 1px solid #e0e0e0;
+  margin-bottom: 70px;
+}
+
+.standarts-content {
+  max-width: 489px;
+}
+
 .standarts-title {
   color: var(--secondary-title-color);
+  margin-bottom: 40px;
 }
+
+.standarts-text {
+  margin-bottom: 30px;
+}
+
+.standarts-list {
+  display: flex;
+  justify-content: space-evenly;
+}
+
 .count {
   font-size: 36px;
   line-height: 1.47;
