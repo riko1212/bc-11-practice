@@ -212,6 +212,18 @@ body {
 
 .standarts {
   padding: 100px 0 70px 0;
+  background-color: #F6F6F8;
+}
+
+.standarts-icon{
+  fill: var(--accent-color);
+
+}
+
+.standarts-item-top{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .standarts-top {
@@ -233,7 +245,6 @@ body {
 }
 
 .standarts-text {
-  margin-bottom: 30px;
 }
 
 .standarts-list {
@@ -250,8 +261,10 @@ body {
 /* works */
 
 .works {
-  background-color: rgb(102, 35, 102);
+  background: linear-gradient(90deg, #504DC2 20.44%, #5F12D0 80.91%), #ffffff;
   padding: 100px 0 85px 0;
+  background-size: 100% 490px;
+  background-repeat: no-repeat;
 }
 
 .works-title {
@@ -306,6 +319,7 @@ body {
 .projects {
   padding-top: 100px;
   padding-bottom: 130px;
+  background-color: #F6F6F8;
 }
 .projects-title {
   color: var(--secondary-title-color);
