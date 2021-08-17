@@ -15,12 +15,22 @@ body {
     margin: 0;
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
+}
+
 .container {
     width: 1140px;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
-    margin-left: -30px;
 }
 .mobile {
     padding-top: 110px;
@@ -432,4 +442,126 @@ address .footer-item:nth-child(3)::before {
     width: 15px;
     height: 15px;
     background-image: url(../img/location.svg);
+}
+
+/* MODAL */
+
+.backdrop {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 600px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 40px;
+}
+
+.button-close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background-color: transparent;
+    border: 1px solid #999999;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+
+.modal-title {
+    font-size: 18px;
+    color: #000000;
+    line-height: 1.2;
+    text-align: center;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.modal-field {
+    margin-bottom: 15px;
+}
+
+.modal-text {
+    margin-bottom: 5px;
+    display: block;
+}
+
+.modal-input {
+    width: 100%;
+    height: 45px;
+    padding-left: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+.modal-textarea {
+    width: 100%;
+    height: 100px;
+    padding-left: 10px;
+    padding-top: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    resize: none;
+}
+
+.check-mark {
+    width: 15px;
+    height: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #000000;
+    border-radius: 3px;
+    margin-right: 7px;
+    color: #ffffff;
+}
+
+.check-text {
+    display: flex;
+    align-items: center;
+}
+
+.input-check:checked + .check-text > .check-mark {
+    background-color: mediumslateblue;
+    border: none;
+}
+
+.check-new {
+    display: block;
+    width: 150px;
+    height: 10px;
+    border: 1px solid #999999;
+    border-radius: 100px;
+    position: relative;
+}
+
+.check-new::after {
+    display: block;
+    content: "";
+    position: absolute;
+    left: 2px;
+    top: -7px;
+    height: 24px;
+    width: 24px;
+    background-color: gray;
+    border-radius: 50%;
+    transition: transform 500ms, background-color 500ms;
+}
+
+.input-check:checked + .check-text > .check-new::after {
+    transform: translate(120px);
+    background-color: mediumspringgreen;
 }
