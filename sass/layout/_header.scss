@@ -1,0 +1,43 @@
+
+.header-link {
+    position: relative;
+    display: block;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.25;
+    color: var(--secondary-text-color);
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    &.active{
+        &::after {
+           position: absolute;
+            content: "";
+            background-color: white;
+            display: block;
+            width: 100%;
+            height: 2px;
+            bottom: 0;
+            left: 0; 
+        }
+    }
+}
+
+.header {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-bottom: 1px solid #a1a1a1;
+}
+
+/* .header-item:not(:last-child) {
+  margin-right: 40px;
+} */
+
+.header-list {
+    display: flex;
+    justify-content: flex-end;
+}
